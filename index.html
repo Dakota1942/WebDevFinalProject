@@ -22,7 +22,6 @@
             <ul class="navbar-nav">
                 <li id="c"> <a href="index.html"> Home </a> </li>
                 <li id="c"> <a id="album"> Albums </a> </li>
-                <li id="c"> <a href="photos.html"> Photos </a> </li>
                 <li id="c"> <a id="other"> Other </a> </li>
                 <ul class="album-dropdown" id="album-dropdown">
                     <li class="itemA" id="b"> <a href="https://www.youtube.com/playlist?list=OLAK5uy_lFeR_Em7P-11GcwpW88evYUjR7raaMYAY"> Duran Duran </a> </li>
@@ -43,6 +42,7 @@
                 </ul>
                 <ul class="other-dropdown" id="other-dropdown">
                     <li class="itemO"> <a href="tickets.html"> Concert Tickets </a> </li>
+                    <li class="itemO"> <a href="photos.html"> Photo Gallery </a> </li>
                 </ul>
             </ul>
             <script>
@@ -50,12 +50,12 @@
                     $('.itemA').show();
                 });
                 $('#album').mouseout(function(){
-                    $('.itemA').hide();
+                   $('.itemA').hide();
                 });
-                $('.item').mouseover(function(){
+                $('.itemA').mouseover(function(){
                     $('.itemA').show();
                 });
-                $('.item').mouseout(function(){
+                $('.itemA').mouseout(function(){
                     $('.itemA').hide();
                 });
 
@@ -65,13 +65,16 @@
                 $('#other').mouseout(function(){
                     $('.itemO').hide();
                 });
-                $('.other').mouseover(function(){
+                $('.itemO').mouseover(function(){
                     $('.itemO').show();
                 });
-                $('.other').mouseout(function(){
+                $('.itemO').mouseout(function(){
                     $('.itemO').hide();
                 });
             </script>
+        </div>
+        <div class="info">
+            <img src="img/duranduran.jpg" alt="">
         </div>
     </body>
 </html>
